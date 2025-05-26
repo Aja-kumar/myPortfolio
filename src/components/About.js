@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image";
+
 const About = () => {
   return (
     <section id="about" className="section bg-gray-50">
@@ -12,9 +14,11 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/3 flex justify-center">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
-              <img 
+              <Image 
                 src="/images/ajay-profile.jpg" 
                 alt="Sudikonda Ajay Kumar" 
+                 width={256}
+                 height={256}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -23,7 +27,7 @@ const About = () => {
           <div className="md:w-2/3">
             <h3 className="text-2xl font-semibold mb-4">MERN Stack Developer with 4+ Years of Experience</h3>
             <p className="text-gray-600 mb-4">
-              I'm a passionate software engineer dedicated to building complex, scalable, and resilient software systems. 
+              I&apos;m a passionate software engineer dedicated to building complex, scalable, and resilient software systems. 
               With a strong focus on user experience and performance, I specialize in creating responsive web applications 
               using modern technologies like React.js, Next.js, Node.js, and MongoDB.
             </p>

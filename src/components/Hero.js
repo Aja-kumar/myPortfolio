@@ -1,5 +1,6 @@
 "use client"
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
             className="md:w-1/2 mb-10 md:mb-0"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-blue-600">Sudikonda Ajay Kumar</span>
+              Hi, I&apos;m <span className="text-blue-600">Sudikonda Ajay Kumar</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">
               MERN Stack Developer
@@ -25,13 +26,13 @@ const Hero = () => {
            <div className="flex space-x-4">
   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
     <Link href="#contact" className="btn btn-primary">
-      Contact Me
+      <span className='text-blue-500 font-bold'>Contact Me</span>
     </Link>
   </motion.div>
 
   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
     <Link href="#projects" className="btn btn-outline">
-      View Projects
+      <span className='text-blue-500 font-bold'>View Projects</span>
     </Link>
   </motion.div>
 </div>
@@ -44,9 +45,11 @@ const Hero = () => {
             className="md:w-1/2 flex justify-center"
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl ">
-              <img 
+              <Image
                 src="/images/ajay-profile.jpg" 
                 alt="Sudikonda Ajay Kumar" 
+                 width={256}
+                 height={256}
                 className="w-full h-full object-cover"
               />
             </div>
