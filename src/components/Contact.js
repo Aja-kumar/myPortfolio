@@ -45,7 +45,7 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold mb-4">Get In Touch</h3>
             <p className="text-gray-600 mb-6">
               Have a project in mind or want to discuss potential opportunities? 
-              Feel free to reach out to me. I'm always open to new challenges and collaborations.
+              Feel free to reach out to me. I&apos;m always open to new challenges and collaborations.
             </p>
             
             <div className="space-y-4">
@@ -146,7 +146,7 @@ const Contact = () => {
               
               {submitStatus === 'success' && (
                 <div className="p-3 bg-green-100 text-green-700 rounded-md">
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I&apos;ll get back to you soon.
                 </div>
               )}
               
